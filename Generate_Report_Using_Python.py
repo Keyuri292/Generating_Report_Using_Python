@@ -20,7 +20,6 @@ def generate_report(machines):
             print("{}: {}".format(machine, user_list))
 
 
-
 class Event:
   def __init__(self, event_date, event_type, machine_name, user):
     self.date = event_date
