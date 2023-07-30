@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
 def get_event_date(event):
   return event.date
 
@@ -26,8 +20,6 @@ def generate_report(machines):
             print("{}: {}".format(machine, user_list))
 
 
-# In[7]:
-
 
 class Event:
   def __init__(self, event_date, event_type, machine_name, user):
@@ -35,9 +27,6 @@ class Event:
     self.type = event_type
     self.machine = machine_name
     self.user = user
-
-
-# In[14]:
 
 
 events = [
@@ -50,21 +39,7 @@ events = [
 ]
 
 
-# In[15]:
-
-
 users = current_users(events)
 print(users)
 
-
-# In[16]:
-
-
 generate_report(users)
-
-
-# In[ ]:
-
-
-
-
